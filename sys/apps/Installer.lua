@@ -102,7 +102,7 @@ end
 
 --[[ Splash ]]--
 function pages.splash:enable()
-	page.titleBar.title = 'Installer v1.0'
+	page.titleBar.title = 'Phone Setup'
 	page.titleBar:draw()
 	UI.Viewport.enable(self)
 end
