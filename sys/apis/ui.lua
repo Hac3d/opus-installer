@@ -1067,7 +1067,7 @@ UI.Page.defaults = {
 		['shift-tab' ] = 'focus_prev',
 		up = 'focus_prev',
 	},
-	backgroundColor = colors.cyan,
+	backgroundColor = colors.gray,
 	textColor = colors.white,
 }
 function UI.Page:postInit()
@@ -1212,7 +1212,7 @@ UI.Grid.defaults = {
 	textSelectedColor = colors.white,
 	backgroundColor = colors.black,
 	backgroundSelectedColor = colors.gray,
-	headerBackgroundColor = colors.cyan,
+	headerBackgroundColor = colors.gray,
 	headerTextColor = colors.white,
 	headerSortColor = colors.yellow,
 	unfocusedTextSelectedColor = colors.white,
@@ -1773,7 +1773,7 @@ end
 UI.Viewport = class(UI.Window)
 UI.Viewport.defaults = {
 	UIElement = 'Viewport',
-	backgroundColor = colors.cyan,
+	backgroundColor = colors.gray,
 	accelerators = {
 		down            = 'scroll_down',
 		up              = 'scroll_up',
@@ -1840,7 +1840,7 @@ UI.TitleBar.defaults = {
 	UIElement = 'TitleBar',
 	height = 1,
 	textColor = colors.white,
-	backgroundColor = colors.cyan,
+	backgroundColor = colors.gray,
 	title = '',
 	frameChar = UI.extChars and '\140' or '-',
 	closeInd = UI.extChars and '\215' or '*',
@@ -2114,7 +2114,7 @@ UI.TabBarMenuItem.defaults = {
 	UIElement = 'TabBarMenuItem',
 	event = 'tab_select',
 	textColor = colors.black,
-	selectedBackgroundColor = colors.cyan,
+	selectedBackgroundColor = colors.gray,
 	unselectedBackgroundColor = colors.lightGray,
 	backgroundColor = colors.lightGray,
 }
@@ -2134,7 +2134,7 @@ UI.TabBar = class(UI.MenuBar)
 UI.TabBar.defaults = {
 	UIElement = 'TabBar',
 	buttonClass = 'TabBarMenuItem',
-	selectedBackgroundColor = colors.cyan,
+	selectedBackgroundColor = colors.gray,
 }
 function UI.TabBar:enable()
 	UI.MenuBar.enable(self)
@@ -2262,7 +2262,7 @@ UI.Tab = class(UI.Window)
 UI.Tab.defaults = {
 	UIElement = 'Tab',
 	tabTitle = 'tab',
-	backgroundColor = colors.cyan,
+	backgroundColor = colors.gray,
 	y = 2,
 }
 function UI.Tab:setParent()
@@ -2573,7 +2573,7 @@ UI.Throttle = class(UI.Window)
 UI.Throttle.defaults = {
 	UIElement = 'Throttle',
 	backgroundColor = colors.gray,
-	bordercolor = colors.cyan,
+	bordercolor = colors.gray,
 	height = 4,
 	width = 10,
 	timeout = .075,
